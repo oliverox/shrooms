@@ -1,0 +1,25 @@
+body {
+    padding-top: 60px;
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+}
+.swatch {
+    padding:2px 22px;
+    border-radius:40px;
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+    box-shadow:0 0 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow:0 0 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow:0 0 1px rgba(0, 0, 0, 0.25);
+}
+.fixWCell {
+    width: 7.5em;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.classNameCell {
+    width:9em;
+}
+.usageCell {
+    width:22em;
+}

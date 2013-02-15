@@ -1,0 +1,75 @@
+/* Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+
+/* Text colors */
+.appText { /* Generic body text */
+    color: #282828;
+}
+.ctaText { /* links */
+    color: #009ddc;
+}
+.contrastText { /* orange text */
+    color: #ff9900;
+}
+.lightestText {  /* White text on dark bg */
+    color: #FFF;
+}
+.lightText {   /* Field hints, subdued gray text */
+    color: #999;
+}
+.mediumText {   /* Dark gray - left nav, some overlays, footer */
+    color: #666;
+}
+.darkText {   /* Almost black text - used in most headers */
+    color: #4c4c4c;
+}
+
+
+/* Border colors */
+.contrastBorder {
+    border-color: #ff9900;
+}
+.mediumBorder {
+    border-color: #cbcbcb;
+}
+
+/* Background colors */
+.appBg { /* App background */
+    background-color: #f5f5f5;
+}
+.navBg { /* Left nav background */
+    background-color: #181818;
+}
+.upsellBg { /* Upsell bar area */
+    background-color: #e1f7f5;
+}
+.contrastBg { /* Orange */
+    background-color: #ff9900;
+}
+.lightestBg {
+    background-color: #FFF;
+}
+.lighterBg {  /* Event view header */
+    background-color: #edeced;
+}
+.lightBg { /* Event view right pane, recommendation item bottom bar */
+    background-color: #e0e0e0;
+}
+.mediumBg {    /* Active Tab, medium overlay on images  */
+    background-color: #7f7f7f;
+}
+.darkBg {  /* Inactive Tab */
+    background-color: #4c4c4c;
+}
+.darkerBg {   /* Header, "we won't recommend... */
+    background-color: #323232;
+}
+.darkestBg {  /* Dark overlay on images, tooltips */
+    background-color: #292929;
+}
+
