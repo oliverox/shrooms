@@ -140,5 +140,114 @@ var Data = {
                 }
             }
         }
+    },
+    buttons : {
+        header : 'Colors (Theme)',
+        content : {
+            sections : {
+                types : {
+                    label : 'Types',
+                    defs : [
+                        {
+                            id    : 'btn',
+                            val   : 'btn',
+                            usage : 'Generic button',
+                            label : 'Button'
+                        },
+                        {
+                            id    : 'btnDropdown',
+                            val   : 'btn btnDropdown',
+                            usage : 'Dropdowns',
+                            label : 'Dropdown'
+                        },
+                        {
+                            id    : 'ctaBtn',
+                            val   : 'btn ctaBtn',
+                            usage : 'Blue CTA button',
+                            label : 'CTA'
+                        },
+                        {
+                            id    : 'contrastBtn',
+                            val   : 'btn contrastBtn',
+                            usage : 'Orange button',
+                            label : 'Contrast'
+                        }
+                    ]
+                },
+                sizes : {
+                    label : 'Sizes',
+                    defs : [
+                        {
+                            id    : 'btnSm',
+                            val   : 'btn btnSm',
+                            usage : 'Small buttons (inline)',
+                            label : 'Small'
+                        },
+                        {
+                            id    : 'btn',
+                            val   : 'btn',
+                            usage : 'Default size',
+                            label : 'Default'
+                        },
+                        {
+                            id    : 'btnLg',
+                            val   : 'btn btnLg',
+                            usage : 'Large size',
+                            label : 'Large'
+                        }
+                    ]
+                }
+            }
+        }
     }
+};
+
+var dataRendering = {
+    colors: [
+        {
+            data : 'label',
+            type : 'string',
+            className : 'fixWCell'
+        },
+        {
+            data : 'id',
+            type : 'string',
+            className : 'fixWCell classNameCell'
+        },
+        {
+            data : 'val',
+            type : 'hexVal'
+        },
+        {
+            data : 'val',
+            type : 'swatch'
+        },
+        {
+            data : 'usage',
+            type : 'string',
+            className : 'usageCell'
+        }
+
+    ],
+    buttons : [
+        {
+            data : 'label',
+            type : 'string',
+            className : 'fixWCell'
+        },
+        {
+            data : 'id',
+            type : 'string',
+            className : 'fixWCell classNameCell'
+        },
+        {
+            data : 'val',
+            type : 'button'
+        },
+        {
+            data : 'usage',
+            type : 'string',
+            className : 'usageCell'
+        }
+    ]
 };

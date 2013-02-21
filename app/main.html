@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StubHub</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/search.css" />
+
+</head>
+<body class="appBg">
+<nav class="leftNav navBg">
+    <ul class="mediumText">
+        <li class="spriteBg cat">Categories</li>
+        <li class="spriteBg social">Social</li>
+        <li class="spriteBg sell">Sell</li>
+        <li class="spriteBg support" >Support</li>
+    </ul>
+</nav>
+<div class="body">
+    <header class="darkerBg">
+        <img class="logo" src="img/logo_220.png" alt="StubHub"/>
+
+        <div id="search" class="lg lightestBg mediumBorder spriteBg">
+            <input type="text" placeholder="Search for a Team, Artist, Event or Venue"/>
+        </div>
+        <div class="topSearches mediumText">
+            <span class="suggestions">
+                Top Searches in New York:
+                <a class="ctaText" href="#">Justin Bieber</a>,
+                <a class="ctaText" href="#">My Little Pony</a>,
+                <a class="ctaText" href="#">Brooklyn Nets</a>,
+                <a class="ctaText" href="#">Governors Ball</a>
+            </span>
+            <a class="advTrigger ctaText" href="#">Advanced Search</a>
+        </div>
+    </header>
+
+    <div class="mainContent">
+        <nav class="lightestText darkBg">
+            <ul class="container">
+                <li class="active mediumBg">Recommended</li>
+                <li>Upcoming</li>
+                <li>Popular</li>
+                <li>Deals</li>
+            </ul>
+        </nav>
+
+        <div class="upsell container upsellBg mediumBorder darkText">
+            <button class="iconBtn spriteBg close">Close</button>
+            Howdy, stranger! What sort of events are you into in <a href="#" class="ctaText">Equestria</a>?
+            <table class="filters"><tbody><tr>  <!-- Use a table because button width can change -->
+                <td width="99%">
+                    <ul class="lightestBg mediumBorder">
+                        <li class="mediumBorder"><span class="spriteBg sports">Sports</span></li>
+                        <li class="mediumBorder"><span class="spriteBg music">Music</span></li>
+                        <li class="mediumBorder"><span class="spriteBg theater">Theatre</span></li>
+                    </ul>
+                </td>
+                <td width="1%">
+                    <button class="btn ctaBtn btnLg">Filter</button>
+                </td>
+            </tr></tbody></table>
+        </div>
+
+        <section class="container eventGrid">
+
+            <div class="filters">
+                <button class="btn btnDropdown">Next 3 Days<span class="spriteBg"></span></button>
+                <button class="btn btnDropdown">All Categories<span class="spriteBg"></span></button>
+            </div>
+            <h1>Upcoming Events in New York Metro</h1>
+            <ul>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">Blue Man Group New York</a>
+                                </dt>
+                                <dd>Astor Place</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$83</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            3 shows
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">Louis CK</a>
+                                </dt>
+                                <dd>The Beacon Theater</dd>
+                                <dd>6:00 PM</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$83</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            Fri, Apr 31
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">New York Rangers</a>
+                                </dt>
+                                <dd>Madison Square Garden</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$125</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            3 shows
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">Diesel Husky and His Fluffies</a>
+                                </dt>
+                                <dd>Siberian Tavern</dd>
+                                <dd>9:00 PM</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$50</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            Sat, May 19
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">New York Mets </a>
+                                </dt>
+                                <dd>Citi Field</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$40</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            10 games
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">New York Knicks @ Brooklyn Nets</a>
+                                </dt>
+                                <dd>Barclays Center</dd>
+                                <dd>7:00 PM</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$66</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            3 shows
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="event">
+                    <div class="spec mediumBorder lightestBg">
+                        <div class="details">
+                            <dl class="metadata">
+                                <dt class="ctaText">
+                                    <a href="#">Blue Man Group New York</a>
+                                </dt>
+                                <dd>Astor Place</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt class="lightText">From</dt>
+                                <dd>$83</dd>
+                            </dl>
+                        </div>
+                        <div class="dates mediumBg lightestText">
+                            3 shows
+                        </div>
+                    </div>
+
+                    <div class="tools">
+                        <ol>
+                            <li><button class="iconBtn spriteBg thumbUp">I like this</button> </li>
+                            <li><button class="iconBtn spriteBg thumbDown">I don't like this</button> </li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+
+
+            <button class="btn btnBlock">More Upcoming Events</button>
+
+        </section>
+    </div>
+
+
+
+    <div class="extras darkerBg">
+        <div class="container content lightestText">
+            Not finding what you're looking for?
+            <span class="lightText">Try our handy event tuner, or connect your Facebook account to get more personalized results.</span>
+
+            <button class="btn ctaBtn btnLg">
+                Launch Event Tuner
+            </button>
+            <button class="btn ctaBtn btnLg">
+                Connect With Facebook
+            </button>
+        </div>
+    </div>
+
+    <div id="marketing">
+        <ul class="container features mediumText">
+            <li class="mediumBorder spriteBg fanprotect">FanProtect&trade; Guarantee</li>
+            <li class="mediumBorder spriteBg gift">Gift Cards</li>
+            <li class="mediumBorder spriteBg rewards">Rewards</li>
+            <li class="mediumBorder spriteBg social">Go Together</li>
+            <li class="spriteBg mobile">Mobile</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="lightestBg">
+            <div class="container mediumText">
+                <dl class="footerNav">
+                    <dt>About Stubhub</dt>
+                    <dd><a href="#">Overview</a></dd>
+                    <dd><a href="#">Our team</a></dd>
+                    <dd><a href="#">Press box</a></dd>
+                    <dd><a href="#">Career opportunities</a></dd>
+                    <dd><a href="#">Contact us</a></dd>
+                </dl>
+
+                <dl class="footerNav">
+                    <dt>Tickets</dt>
+                    <dd><a href="#">Sports tickets</a></dd>
+                    <dd><a href="#">Concert tickets</a></dd>
+                    <dd><a href="#">Theatre tickets</a></dd>
+                    <dd><a href="#">Tickets by Venue</a></dd>
+                </dl>
+
+                <dl class="footerNav">
+                    <dt>Sports Tickets</dt>
+                    <dd><a href="#">MLB tickets</a></dd>
+                    <dd><a href="#">NFL tickets</a></dd>
+                    <dd><a href="#">NBA tickets</a></dd>
+                    <dd><a href="#">NHL tickets</a></dd>
+                    <dd><a href="#">NCAA football tickets</a></dd>
+                    <dd><a href="#">NCAA basketball tickets</a></dd>
+                </dl>
+
+                <dl class="footerNav">
+                    <dt>General</dt>
+                    <dd><a href="#">FanProtect&trade; Guarantee</a></dd>
+                    <dd><a href="#">Gift certificates</a></dd>
+                    <dd><a href="#">Last Minute Service Centers</a></dd>
+                    <dd><a href="#">StubHub Fan Rewards</a></dd>
+                    <dd><a href="#">Notifications</a></dd>
+                    <dd><a href="#">Site Map</a></dd>
+                </dl>
+
+                <dl class="footerNav">
+                    <dt>Location & Currency</dt>
+                    <dd>
+                        <button class="btn btnSm btnDropdown">
+                            United States
+                            <span class="spriteBg"></span>
+                        </button>
+                    </dd>
+                    <dd>
+                        <button class="btn btnSm btnDropdown">
+                            English
+                            <span class="spriteBg"></span>
+                        </button>
+                    </dd>
+                    <dd>
+                        <button class="btn btnSm btnDropdown">
+                            US Dollar
+                            <span class="spriteBg"></span>
+                        </button>
+                    </dd>
+
+                    <dt>Stay Connected</dt>
+                    <dd><a href="#">Facebook</a></dd>
+                    <dd><a href="#">Twitter</a></dd>
+                    <dd><a href="#">Email</a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>

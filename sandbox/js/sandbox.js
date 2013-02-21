@@ -71,6 +71,9 @@ Sandbox.prototype.formatItem = function(item, type){
             return item.toUpperCase();
         case 'swatch':
             return ['<span class="swatch" style="background-color:',item,';">&nbsp;</span>'].join('');
+        case 'button':
+            var isDropdown = item.indexOf('Dropdown') != -1;
+            return ['<button class="',item,'">Sample', (isDropdown ? '<span class="spriteBg"></span>' : ''),'</button>'].join('');
         default:
             return item;
     }
@@ -85,17 +88,18 @@ Sandbox.prototype.renderItemCell = function(item, type, className){
 
 };
 
-Sandbox.prototype.renderItemTable = function(data, titles){
+Sandbox.prototype.renderItemTable = function(type, data, titles){
     var markup = [];
+    var currCellItem, renderProp;
     markup.push(this.renderTableHeader(titles));
     markup.push('<tbody>');
     for(var i=0; i<data.length; i++){
         markup.push('<tr>');
-        markup.push(this.renderItemCell(data[i].label, 'string', 'fixWCell'));
-        markup.push(this.renderItemCell(data[i].id, 'string', 'fixWCell classNameCell'));
-        markup.push(this.renderItemCell(data[i].val, 'hexVal'));
-        markup.push(this.renderItemCell(data[i].val, 'swatch'));
-        markup.push(this.renderItemCell(data[i].usage, 'string', 'usageCell'));
+        for(var j=0; j<dataRendering[type].length; j++){
+            renderProp = dataRendering[type][j];
+            currCellItem = data[i];
+            markup.push(this.renderItemCell(currCellItem[renderProp.data], renderProp.type, renderProp.className));
+        }
     }
     markup.push('</tbody></table>');
     return markup.join('');
@@ -108,10 +112,23 @@ Sandbox.prototype.renderColors = function(data){
     for(var i in data.sections){
         curr = data.sections[i];
         markup.push(this.getSectionHeader(curr.label, 'h4'));
-        markup.push(this.renderItemTable(curr.defs, titles));
+        markup.push(this.renderItemTable('colors', curr.defs, titles));
     }
     return markup.join('');
 };
+
+Sandbox.prototype.renderButtons = function(data){
+    var curr;
+        var markup = [];
+        var titles = ['&nbsp;','Classname', 'Example', 'Usage'];
+        for(var i in data.sections){
+            curr = data.sections[i];
+            markup.push(this.getSectionHeader(curr.label, 'h4'));
+            markup.push(this.renderItemTable('buttons', curr.defs, titles));
+        }
+        return markup.join('');
+};
+
 
 
 

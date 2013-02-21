@@ -1,0 +1,117 @@
+/* Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 4px 15px;
+    color:#666;
+    font-family:Helvetica Neue,Helvetica,Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight:normal;
+    text-align:center;
+    line-height: 22px;
+    border: solid 1px #999;
+    border-radius:0;
+    background-color:#ebebeb;
+    background-image: -moz-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: -webkit-linear-gradient(top, #fefefe, #ebebeb);
+    background-image: linear-gradient(to bottom, #fefefe, #ebebeb);
+    background-repeat: repeat-x;
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+    cursor:pointer;
+}
+
+.btn:hover {
+    background-color:#ebebeb;
+    background-position: 0 -10px;
+    transition: background-position 0.08s linear;
+    -moz-transition: background-position 0.08s linear;
+    -webkit-transition: background-position 0.08s linear;
+    -o-transition: background-position 0.08s linear;
+}
+.btn:active {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.ctaBtn,
+.ctaBtn:hover,
+.ctaBtn:active {
+    color: #FFF;
+    border-color:#0077a5;
+    background-color: #009edc;
+    background-image:none;
+}
+.ctaBtn:hover {
+    background-color:#33b1e3;
+}
+.contrastBtn,
+.contrastBtn:hover,
+.contrastBtn:active {
+    color:#FFF;
+    border-color:#cd6b0c;
+    background-color:#f6800f;
+    background-image:none;
+}
+.contrastBtn:hover {
+    background-color:#f79231;
+}
+
+/* Button Sizes */
+.btnLg {
+    padding:10px 40px;
+    font-size:14px;
+}
+.btnSm {
+    padding: 1px 15px;
+    font-size:11px;
+    line-height: 17px;
+}
+
+/* Button Positions */
+/* Reserved for button groups */
+.btnBlock {
+    display:block;
+    width:100%;
+}
+
+/* Button Dropdown */
+.btnDropdown {
+    padding-right:40px;
+}
+.btnDropdown span {
+    position:absolute;
+    right:2px;
+    top:45%;
+    width:16px;
+    height:4px;
+    background-position:50% -823px;
+}
+
+
+/* Icon buttons */
+.iconBtn {
+    height:20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    border:none;
+    background-color:transparent;
+    font-size:0;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+button.close {
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    right: -8px;
+    top: -8px;
+    background-position:50% -732px;
+}

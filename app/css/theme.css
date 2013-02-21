@@ -73,3 +73,8 @@
     background-color: #292929;
 }
 
+/* Sprites */
+.spriteBg {
+    background-image: url('../img/sprite.png');
+    background-repeat:no-repeat;
+}

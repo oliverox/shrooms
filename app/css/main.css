@@ -1,0 +1,190 @@
+/* Guidelines for ordering CSS rules:
+   * Box model all rules related to position, size)
+   * Font (rules related to font size, style, line-spacing, etc)
+   * Border (rules related to border-width, style, etc)
+   * Background (background position for sprites, background-size, etc)
+   * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+
+header .topSearches {
+    width:800px;
+    margin: 0 auto;
+}
+header .topSearches .suggestions {
+    display: inline-block;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+header .advTrigger {
+    float:right;
+}
+.extras .content {
+    padding: 45px 0;
+    font-size:11px;
+    text-align:center;
+}
+.extras .btn {
+    margin: 24px 5px 0;
+    width: 350px;
+}
+
+/* Feature Upsell */
+.upsell {
+    position:relative;
+    padding:20px 0;
+    margin:40px auto 24px;
+    text-align:center;
+    border-width: 1px;
+    border-style: solid;
+}
+.upsell .filters {
+    width: 566px;
+    margin: 14px auto 0;
+}
+.upsell .filters ul {
+    overflow:hidden;
+    margin-right: 4px;
+    border-width:1px;
+    border-style : solid;
+    white-space:nowrap;
+}
+.upsell .filters li {
+    display:inline-block;
+    position: relative;
+    margin: 0;
+    width: 33%;
+    font-size: 14px;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+.upsell .filters li:last-child {
+    border-right-width:0;
+}
+.upsell .filters li span {
+    display: inline-block;
+    padding:11px 12px 11px 46px;
+    line-height: 22px;
+}
+.upsell .filters .sports {
+    background-position: 0 -483px;
+}
+.upsell .filters .music {
+    background-position: 0 -562px;
+}
+.upsell .filters .theater {
+    background-position: 0 -642px;
+}
+
+/* Event Grid */
+.eventGrid {
+    margin-bottom: 50px;
+}
+.eventGrid h1 {
+    font-size: 20px;
+    line-height: 38px;
+}
+.eventGrid .filters {
+    float : right;
+}
+.eventGrid ul {
+    clear: both;
+    margin:14px 0 20px;
+}
+.eventGrid li.event {
+    position: relative;
+    display: inline-block;
+    margin: 0 14px 10px 0;
+}
+.eventGrid li.event .spec {
+    position:relative;
+    width: 185px;
+    height: 160px;
+    border-style:solid;
+    border-width:1px;
+}
+.eventGrid li.event:nth-child(4n+0) {
+    margin-right:0;
+}
+.eventGrid li.event .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+.eventGrid li.event .metadata {
+    margin-right: 30px;
+    font-size: 11px;
+}
+.eventGrid li.event .metadata dt {
+    font-weight:bold;
+}
+.eventGrid li.event .price {
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    font-size: 9px;
+}
+.eventGrid li.event .price dd {
+    display: block;
+    font-size:14px;
+}
+.eventGrid li.event .dates {
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 8px;
+    font-size:10px;
+    text-transform: uppercase;
+}
+.eventGrid li.event .tools {
+    padding: 8px 0;
+}
+.eventGrid li.event .tools li {
+    display: inline-block;
+}
+.eventGrid .tools .thumbUp,
+.eventGrid .tools .thumbDown {
+    width:22px;
+    height:22px;
+}
+.thumbUp {
+    background-position: 50% -894px;
+}
+.thumbDown {
+    background-position: 50% -974px;
+}
+/* Marketing section */
+#marketing .features li{
+    display: inline-block;
+    width:19%;
+    padding:52px 0 8px;
+    font-size: 11px;
+    text-align: center;
+    border-right-width:1px;
+    border-right-style : solid;
+}
+#marketing .features li:last-child {
+    border-right-style:none;
+}
+#marketing li.fanprotect {
+    background-position:50% -1040px;
+}
+#marketing li.gift {
+    background-position:50% -1120px;
+}
+#marketing li.rewards {
+    background-position:50% -1200px;
+}
+#marketing li.social {
+    background-position:50% -1280px;
+}
+#marketing li.mobile {
+    background-position:50% -1360px;
+}
+#marketing .container {
+    padding:26px 0;
+    white-space: nowrap;
+}

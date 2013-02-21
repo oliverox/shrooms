@@ -1,0 +1,22 @@
+/* Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+#search {
+    display: block;
+    position: relative;
+    margin: 70px auto 16px;
+    width: 800px;
+    font-size: 14px;
+    background-position:4px -312px;
+}
+#search input {
+    margin-left: 40px;
+    width:750px;
+    padding: 24px 12px;
+    border:none;
+    background: transparent;
+}
