@@ -5,20 +5,17 @@
    * Background (background position for sprites, background-size, etc)
    * CSS3/Other (drop shadow, transitions, rounded corners, etc)
 */
-
 header .topSearches {
-    width:800px;
-    margin: 0 auto;
+    display:table;
 }
 header .topSearches .suggestions {
-    display: inline-block;
-    max-width: 600px;
-    overflow: hidden;
+    display: table-cell;
+    padding-right:20px;
     text-overflow: ellipsis;
-    white-space: nowrap;
 }
 header .advTrigger {
-    float:right;
+    display: table-cell;
+    white-space:nowrap;
 }
 .extras .content {
     padding: 45px 0;
@@ -27,20 +24,24 @@ header .advTrigger {
 }
 .extras .btn {
     margin: 24px 5px 0;
-    width: 350px;
+    width: 40%;
 }
 
 /* Feature Upsell */
 .upsell {
     position:relative;
-    padding:20px 0;
+    padding:20px 4px;
     margin:40px auto 24px;
     text-align:center;
     border-width: 1px;
     border-style: solid;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 .upsell .filters {
-    width: 566px;
+    max-width: 99%;
+    width: 80%;
     margin: 14px auto 0;
 }
 .upsell .filters ul {
@@ -62,7 +63,7 @@ header .advTrigger {
 .upsell .filters li:last-child {
     border-right-width:0;
 }
-.upsell .filters li span {
+.upsell .filters li a {
     display: inline-block;
     padding:11px 12px 11px 46px;
     line-height: 22px;
@@ -90,17 +91,22 @@ header .advTrigger {
 }
 .eventGrid ul {
     clear: both;
-    margin:14px 0 20px;
+    margin:1.16em -1.16em 1.6em 0;
 }
 .eventGrid li.event {
     position: relative;
-    display: inline-block;
-    margin: 0 14px 10px 0;
+    display: block;
+    float:left;
+    width:24.9%;
+    min-width: 12em;
+    padding: 0 10px 10px 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 .eventGrid li.event .spec {
     position:relative;
-    width: 185px;
-    height: 160px;
+    height: 14em;
     border-style:solid;
     border-width:1px;
 }
@@ -115,7 +121,7 @@ header .advTrigger {
     padding: 10px;
 }
 .eventGrid li.event .metadata {
-    margin-right: 30px;
+    margin-right: 3.4em;
     font-size: 0.91em;
 }
 .eventGrid li.event .metadata dt {
@@ -126,6 +132,7 @@ header .advTrigger {
     right:10px;
     bottom:10px;
     font-size: 0.75em;
+    text-align:right;
 }
 .eventGrid li.event .price dd {
     display: block;
@@ -160,11 +167,14 @@ header .advTrigger {
 #marketing .features li{
     display: inline-block;
     width:19%;
-    padding:52px 0 8px;
+    overflow: hidden;
+    padding:52px 4px 8px;
     font-size: 0.91em;
     text-align: center;
+    text-overflow: ellipsis;
     border-right-width:1px;
     border-right-style : solid;
+    cursor : pointer;
 }
 #marketing .features li:last-child {
     border-right-style:none;

@@ -9,13 +9,13 @@
     display: block;
     position: relative;
     margin: 70px auto 16px;
-    width: 800px;
+    width: 86%;
     font-size: 1.16em;
     background-position:4px -312px;
 }
 #search input {
     margin-left: 40px;
-    width:750px;
+    width:86%;
     padding: 24px 12px;
     border:none;
     background: transparent;
