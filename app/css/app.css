@@ -8,7 +8,7 @@
 
 body {
     font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
-    font-size:12px;
+    font-size:75%;
 }
 .container { /* Generic page containers */
     width:800px;
@@ -21,7 +21,7 @@ body {
     left: 0;
     top: 0;
     width: 75px;
-    font-size: 10px;
+    font-size: 0.8em;
 }
 .leftNav ul {
     padding: 5px 0;
@@ -99,7 +99,7 @@ footer .container {
 .footerNav {
     display: inline-block;
     width: 20%;
-    font-size: 11px;
+    font-size: 0.91em;
     vertical-align: top;
 }
 .footerNav dt{

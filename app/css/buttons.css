@@ -12,7 +12,7 @@
     padding: 4px 15px;
     color:#666;
     font-family:Helvetica Neue,Helvetica,Arial,Sans-Serif;
-    font-size: 12px;
+    font-size: 1em;
     font-weight:normal;
     text-align:center;
     line-height: 22px;
@@ -66,11 +66,11 @@
 /* Button Sizes */
 .btnLg {
     padding:10px 40px;
-    font-size:14px;
+    font-size:1.16em;
 }
 .btnSm {
     padding: 1px 15px;
-    font-size:11px;
+    font-size:0.91em;
     line-height: 17px;
 }
 

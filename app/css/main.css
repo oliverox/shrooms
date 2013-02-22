@@ -22,7 +22,7 @@ header .advTrigger {
 }
 .extras .content {
     padding: 45px 0;
-    font-size:11px;
+    font-size:0.91em;
     text-align:center;
 }
 .extras .btn {
@@ -55,7 +55,7 @@ header .advTrigger {
     position: relative;
     margin: 0;
     width: 33%;
-    font-size: 14px;
+    font-size: 1.16em;
     border-right-width: 1px;
     border-right-style: solid;
 }
@@ -82,7 +82,7 @@ header .advTrigger {
     margin-bottom: 50px;
 }
 .eventGrid h1 {
-    font-size: 20px;
+    font-size: 1.66em;
     line-height: 38px;
 }
 .eventGrid .filters {
@@ -116,7 +116,7 @@ header .advTrigger {
 }
 .eventGrid li.event .metadata {
     margin-right: 30px;
-    font-size: 11px;
+    font-size: 0.91em;
 }
 .eventGrid li.event .metadata dt {
     font-weight:bold;
@@ -125,18 +125,18 @@ header .advTrigger {
     position:absolute;
     right:10px;
     bottom:10px;
-    font-size: 9px;
+    font-size: 0.75em;
 }
 .eventGrid li.event .price dd {
     display: block;
-    font-size:14px;
+    font-size:1.54em;
 }
 .eventGrid li.event .dates {
     position:absolute;
     top: 0;
     left: 0;
     padding: 6px 8px;
-    font-size:10px;
+    font-size:0.8em;
     text-transform: uppercase;
 }
 .eventGrid li.event .tools {
@@ -161,7 +161,7 @@ header .advTrigger {
     display: inline-block;
     width:19%;
     padding:52px 0 8px;
-    font-size: 11px;
+    font-size: 0.91em;
     text-align: center;
     border-right-width:1px;
     border-right-style : solid;
