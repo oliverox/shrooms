@@ -6,32 +6,54 @@
    * CSS3/Other (drop shadow, transitions, rounded corners, etc)
 */
 header .topSearches {
-    display:table;
+    display: none;
 }
-header .topSearches .suggestions {
-    display: table-cell;
-    padding-right:20px;
-    text-overflow: ellipsis;
+/* Marketing section */
+
+#marketing .container {
+    padding:22px 0 0;
 }
-header .advTrigger {
-    display: table-cell;
-    white-space:nowrap;
+#marketing .features li{
+    padding: 20px 0 20px 60px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    cursor : pointer;
 }
+#marketing .features li:last-child {
+    border-bottom-style:none;
+}
+#marketing li.fanprotect {
+    background-position:0 -1040px;
+}
+#marketing li.gift {
+    background-position:0 -1120px;
+}
+#marketing li.rewards {
+    background-position:0 -1200px;
+}
+#marketing li.social {
+    background-position:0 -1280px;
+}
+#marketing li.mobile {
+    background-position:0 -1360px;
+}
+
+/* Extras (event tuner/fb upsell) */
 .extras .content {
     padding: 45px 0;
     font-size:0.91em;
     text-align:center;
 }
 .extras .btn {
-    margin: 24px 5px 0;
-    width: 40%;
+    margin: 24px auto 0;
+    width: 80%;
 }
-
 /* Feature Upsell */
 .upsell {
     position:relative;
     padding:20px 4px;
     margin:40px auto 24px;
+    max-width: 830px;
     text-align:center;
     border-width: 1px;
     border-style: solid;
@@ -40,19 +62,18 @@ header .advTrigger {
     -webkit-box-sizing:border-box;
 }
 .upsell .filters {
-    max-width: 99%;
-    width: 80%;
+    width: 90%;
     margin: 14px auto 0;
 }
 .upsell .filters ul {
     overflow:hidden;
-    margin-right: 4px;
     border-width:1px;
     border-style : solid;
     white-space:nowrap;
+    vertical-align: bottom; /* Makes table-cell display work well in the UL */
 }
 .upsell .filters li {
-    display:inline-block;
+    float: left;
     position: relative;
     margin: 0;
     width: 33%;
@@ -64,18 +85,24 @@ header .advTrigger {
     border-right-width:0;
 }
 .upsell .filters li a {
-    display: inline-block;
-    padding:11px 12px 11px 46px;
+    display: block;
+    padding:38px 12px 11px;
+    overflow: hidden;
     line-height: 22px;
+    text-overflow: ellipsis;
 }
 .upsell .filters .sports {
-    background-position: 0 -483px;
+    background-position: 50% -483px;
 }
 .upsell .filters .music {
-    background-position: 0 -562px;
+    background-position: 50% -562px;
 }
 .upsell .filters .theater {
-    background-position: 0 -642px;
+    background-position: 50% -642px;
+}
+.upsell .btnContainer button {
+    width: 100%;
+    margin-top: 8px;
 }
 
 /* Event Grid */
@@ -83,11 +110,13 @@ header .advTrigger {
     margin-bottom: 50px;
 }
 .eventGrid h1 {
+    float: left;
+    padding:4px 14px 2px 0;
     font-size: 1.66em;
-    line-height: 38px;
 }
 .eventGrid .filters {
     float : right;
+    margin-bottom: 20px;
 }
 .eventGrid ul {
     clear: both;
@@ -97,8 +126,7 @@ header .advTrigger {
     position: relative;
     display: block;
     float:left;
-    width:24.9%;
-    min-width: 12em;
+    width:100%;
     padding: 0 10px 10px 0;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -163,38 +191,124 @@ header .advTrigger {
 .thumbDown {
     background-position: 50% -974px;
 }
-/* Marketing section */
-#marketing .features li{
-    display: inline-block;
-    width:19%;
-    overflow: hidden;
-    padding:52px 4px 8px;
-    font-size: 0.91em;
-    text-align: center;
-    text-overflow: ellipsis;
-    border-right-width:1px;
-    border-right-style : solid;
-    cursor : pointer;
+
+@media all and (min-width:500px) {
+    header .topSearches {
+        display:table;
+    }
+    header .topSearches .suggestions {
+        display: table-cell;
+        padding-right:20px;
+        text-overflow: ellipsis;
+    }
+    header .advTrigger {
+        display: table-cell;
+        white-space:nowrap;
+        text-align : right;
+    }
+
+    /*Event Grid */
+    .eventGrid li.event {
+        width: 50%;
+    }
+
+    /* Extras (event tuner/fb upsell) */
+    .extras .btn {
+        margin: 24px 5px 0;
+        width: 40%;
+    }
+    /* Marketing */
+    #marketing .features li{
+        display: inline-block;
+        width:19%;
+        overflow: hidden;
+        padding:52px 4px 8px;
+        font-size: 0.91em;
+        text-align: center;
+        text-overflow: ellipsis;
+        border-right-width:1px;
+        border-bottom-width:0;
+        border-right-style : solid;
+        border-bottom-style: none;
+    }
+    #marketing .features li:last-child {
+        border-right-style:none;
+    }
+    #marketing li.fanprotect {
+        background-position:50% -1040px;
+    }
+    #marketing li.gift {
+        background-position:50% -1120px;
+    }
+    #marketing li.rewards {
+        background-position:50% -1200px;
+    }
+    #marketing li.social {
+        background-position:50% -1280px;
+    }
+    #marketing li.mobile {
+        background-position:50% -1360px;
+    }
+    #marketing .features li:last-child {
+        border-right-style:none;
+    }
+    #marketing .container {
+        padding-bottom: 26px;
+        white-space: nowrap;
+    }
 }
-#marketing .features li:last-child {
-    border-right-style:none;
+
+
+/* In-between resolution - not quite a large window, but not quite a phone */
+@media all and (min-width:700px) {
+    /* Upsell box */
+    .upsell .filters {
+        max-width: 90%;
+        width: auto;
+    }
+    .upsell .filters ul,
+    .upsell .btnContainer {
+        display:table-cell;
+    }
+    .upsell .filters li {
+        display: inline-block;
+    }
+    .upsell .filters li a {
+        padding:11px 12px 11px 46px;
+    }
+    .upsell .filters li a {
+        padding:11px 12px 11px 46px;
+    }
+    .upsell .filters .sports {
+        background-position: 0 -483px;
+    }
+    .upsell .filters .music {
+        background-position: 0 -562px;
+    }
+    .upsell .filters .theater {
+        background-position: 0 -642px;
+    }
+    .upsell .btnContainer button {
+        width: 100%;
+        margin-top: 8px;
+    }
+    .upsell .btnContainer {
+        width: 1%;
+        padding-left: 4px;
+    }
+    .upsell .btnContainer button {
+        width:auto;
+        margin-top: 0;
+    }
+
+    /* Event grid */
+    .eventGrid li.event {
+        width: 33%;
+    }
 }
-#marketing li.fanprotect {
-    background-position:50% -1040px;
-}
-#marketing li.gift {
-    background-position:50% -1120px;
-}
-#marketing li.rewards {
-    background-position:50% -1200px;
-}
-#marketing li.social {
-    background-position:50% -1280px;
-}
-#marketing li.mobile {
-    background-position:50% -1360px;
-}
-#marketing .container {
-    padding:26px 0;
-    white-space: nowrap;
+@media all and (min-width:900px) {
+    /* Event grid */
+    .eventGrid li.event {
+        width: 24.9%;
+    }
 }

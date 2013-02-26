@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>StubHub</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -11,70 +11,91 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/search.css" />
 
+    <script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
-<body class="appBg">
-<nav class="leftNav navBg">
+<body class="appBg ">
+
+<nav class="mainNav navBg">
+
     <ul class="mediumText">
-        <li class="spriteBg cat">Categories</li>
-        <li class="spriteBg social">Social</li>
-        <li class="spriteBg sell">Sell</li>
-        <li class="spriteBg support" >Support</li>
+        <li class="spriteBg cat mediumBorder">Categories</li>
+        <li class="spriteBg social mediumBorder">Social</li>
+        <li class="spriteBg sell mediumBorder">Sell</li>
+        <li class="spriteBg support mediumBorder" >Support</li>
     </ul>
 </nav>
-<div class="body">
-    <header class="darkerBg">
-        <img class="logo" src="img/logo_220.png" alt="StubHub"/>
 
+<header class="darkerBg">
+    <button data-type="toggleNav" class="navBtn iconBtn spriteBg menu">
+        Toggle Navigation
+    </button>
+    <button data-type="toggle" data-target="headerSearch" class="navBtn iconBtn spriteBg searchBtn">
+        Search
+    </button>
+
+    <img class="logo" src="img/logo_220.png" alt="StubHub"/>
+
+    <div id="headerSearch" class="headerSearch">
         <div id="search" class="lg lightestBg mediumBorder spriteBg">
             <input type="text" placeholder="Search for a Team, Artist, Event or Venue"/>
         </div>
         <div class="topSearches container mediumText">
-            <span class="suggestions">
-                Top Searches in New York:
-                <a class="ctaText" href="#">Justin Bieber</a>,
-                <a class="ctaText" href="#">My Little Pony</a>,
-                <a class="ctaText" href="#">Brooklyn Nets</a>,
-                <a class="ctaText" href="#">Governors Ball</a>
-            </span>
+                <span class="suggestions">
+                    Top Searches in New York:
+                    <a class="ctaText" href="#">Justin Bieber</a>,
+                    <a class="ctaText" href="#">My Little Pony</a>,
+                    <a class="ctaText" href="#">Brooklyn Nets</a>,
+                    <a class="ctaText" href="#">Governors Ball</a>
+                </span>
             <a class="advTrigger ctaText" href="#">Advanced Search</a>
         </div>
-    </header>
+    </div>
+</header>
+
+
+<div class="body">
+
 
     <div class="mainContent">
         <nav class="lightestText darkBg">
-            <ul class="container">
+            <button data-type="scrollTab" data-target="left" class="darkBg spriteBg iconBtn arrow">
+                <span></span>
+            </button>
+            <ul class="tabs container">
                 <li class="active mediumBg">Recommended</li>
                 <li>Upcoming</li>
                 <li>Popular</li>
                 <li>Deals</li>
             </ul>
+            <button  data-type="scrollTab" data-target="right" class="darkBg spriteBg iconBtn arrow arrowRight">
+                <span></span>
+            </button>
         </nav>
 
         <div class="upsell container upsellBg mediumBorder darkText">
             <button class="iconBtn spriteBg close">Close</button>
             Howdy, stranger! What sort of events are you into in <a href="#" class="ctaText">Equestria</a>?
 
-            <table class="filters"><tbody><tr>  <!-- Use a table because button width can change -->
-                <td width="99%">
-                    <ul class="lightestBg mediumBorder">
-                        <li class="mediumBorder"><a href="#" class="spriteBg sports">Sports</a></li>
-                        <li class="mediumBorder"><a href="#" class="spriteBg music">Music</a></li>
-                        <li class="mediumBorder"><a href="#" class="spriteBg theater">Theatre</a></li>
-                    </ul>
-                </td>
-                <td width="1%">
+            <div class="filters">  <!-- Use a table because button width can change -->
+
+                <ul class="lightestBg mediumBorder">
+                    <li class="mediumBorder"><a href="#" class="spriteBg sports">Sports</a></li>
+                    <li class="mediumBorder"><a href="#" class="spriteBg music">Music</a></li>
+                    <li class="mediumBorder"><a href="#" class="spriteBg theater">Theatre</a></li>
+                </ul>
+                <div class="btnContainer">
                     <button class="btn ctaBtn btnLg">Filter</button>
-                </td>
-            </tr></tbody></table>
+                </div>
+            </div>
         </div>
 
         <section class="container eventGrid">
-
+            <h1>Upcoming Events in New York Metro</h1>
             <div class="filters">
                 <button class="btn btnDropdown">Next 3 Days<span class="spriteBg"></span></button>
                 <button class="btn btnDropdown">All Categories<span class="spriteBg"></span></button>
             </div>
-            <h1>Upcoming Events in New York Metro</h1>
             <ul>
 
                 <li class="event">
@@ -276,8 +297,6 @@
         </section>
     </div>
 
-
-
     <div class="extras darkerBg">
         <div class="container content lightestText">
 
@@ -347,25 +366,24 @@
 
                 <dl class="footerNav">
                     <dt>Location & Currency</dt>
-                    <dd>
+                    <dd class="locale">
                         <button class="btn btnSm btnDropdown">
                             United States
                             <span class="spriteBg"></span>
                         </button>
                     </dd>
-                    <dd>
+                    <dd class="locale">
                         <button class="btn btnSm btnDropdown">
                             English
                             <span class="spriteBg"></span>
                         </button>
                     </dd>
-                    <dd>
+                    <dd class="locale">
                         <button class="btn btnSm btnDropdown">
                             US Dollar
                             <span class="spriteBg"></span>
                         </button>
                     </dd>
-
                     <dt>Stay Connected</dt>
                     <dd><a href="#">Facebook</a></dd>
                     <dd><a href="#">Twitter</a></dd>
@@ -375,5 +393,8 @@
         </div>
     </footer>
 </div>
+<script type="text/javascript">
+    window.eventApp = new EventApp();
+</script>
 
 </body>

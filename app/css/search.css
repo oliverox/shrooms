@@ -5,18 +5,39 @@
  * Background (background position for sprites, background-size, etc)
  * CSS3/Other (drop shadow, transitions, rounded corners, etc)
 */
-#search {
-    display: block;
+
+.headerSearch {
+    display:none;
     position: relative;
-    margin: 70px auto 16px;
-    width: 86%;
-    font-size: 1.16em;
-    background-position:4px -312px;
+    padding: 14px 0;
+}
+#search {
+    width: 90%;
+    margin: 0 auto;
+    background-position:4px -324px;
 }
 #search input {
     margin-left: 40px;
     width:86%;
-    padding: 24px 12px;
+    padding:12px;
     border:none;
     background: transparent;
+}
+
+@media all and (min-width:500px) {
+    .headerSearch {
+        display: block;
+        padding-bottom: 30px;
+        margin:54px auto 0;
+    }
+    #search {
+        width: 86%;
+        margin-bottom: 16px;
+        font-size: 1.16em;
+        background-position:4px -312px;
+    }
+    #search input {
+        padding: 24px 12px;
+    }
+
 }

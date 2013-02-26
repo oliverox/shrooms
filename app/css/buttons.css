@@ -63,6 +63,15 @@
 .contrastBtn:hover {
     background-color:#f79231;
 }
+.navBtn,
+.navBtn:hover,
+.navBtn:active {
+    color:#FAFAFA;
+    background-color:#141414;
+}
+.navBtn:hover {
+    background-color:#232323;
+}
 
 /* Button Sizes */
 .btnLg {
@@ -103,7 +112,6 @@
     padding: 0;
     margin: 0;
     border:none;
-    background-color:transparent;
     font-size:0;
     text-indent: -9999px;
     cursor: pointer;
