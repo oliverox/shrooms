@@ -1,0 +1,9 @@
+nav,
+header,
+footer,
+section {
+    display: block;
+}
+.eventGrid li.event {
+    width: 33%;
+}

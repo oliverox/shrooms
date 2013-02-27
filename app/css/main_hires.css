@@ -1,0 +1,114 @@
+header .topSearches {
+    display:table;
+}
+header .topSearches .suggestions {
+    display: table-cell;
+    padding-right:20px;
+    text-overflow: ellipsis;
+}
+header .advTrigger {
+    display: table-cell;
+    white-space:nowrap;
+    text-align : right;
+}
+/*Event Grid */
+.eventGrid li.event {
+    width: 50%;
+}
+
+/* Extras (event tuner/fb upsell) */
+.extras .btn {
+    margin: 24px 5px 0;
+    width: 40%;
+}
+/* Marketing */
+#marketing .features li{
+    display: inline-block;
+    width:19%;
+    overflow: hidden;
+    padding:52px 4px 8px;
+    font-size: 0.91em;
+    text-align: center;
+    text-overflow: ellipsis;
+    border-bottom-width:0;
+    border-bottom-style: none;
+    border-left-style : solid;
+    border-left-width:1px;
+}
+#marketing .features li:first-child {
+    border-left-style:none;
+}
+#marketing li.fanprotect {
+    background-position:50% -1040px;
+}
+#marketing li.gift {
+    background-position:50% -1120px;
+}
+#marketing li.rewards {
+    background-position:50% -1200px;
+}
+#marketing li.social {
+    background-position:50% -1280px;
+}
+#marketing li.mobile {
+    background-position:50% -1360px;
+}
+#marketing .container {
+    padding-bottom: 26px;
+    white-space: nowrap;
+}
+
+
+/* In-between resolution - not quite a large window, but not quite a phone */
+@media all and (min-width:700px) {
+    /* Upsell box */
+    .upsell .filters {
+        max-width: 90%;
+        width: auto;
+    }
+    .upsell .filters ul,
+    .upsell .btnContainer {
+        display:table-cell;
+    }
+    .upsell .filters li {
+        display: inline-block;
+    }
+    .upsell .filters li a {
+        padding:11px 12px 11px 46px;
+    }
+    .upsell .filters li a {
+        padding:11px 12px 11px 46px;
+    }
+    .upsell .filters .sports {
+        background-position: 0 -483px;
+    }
+    .upsell .filters .music {
+        background-position: 0 -562px;
+    }
+    .upsell .filters .theater {
+        background-position: 0 -642px;
+    }
+    .upsell .btnContainer button {
+        width: 100%;
+        margin-top: 8px;
+    }
+    .upsell .btnContainer {
+        width: 1%;
+        padding-left: 4px;
+    }
+    .upsell .btnContainer button {
+        width:auto;
+        margin-top: 0;
+    }
+
+    /* Event grid */
+    .eventGrid li.event {
+        width: 33%;
+    }
+}
+@media all and (min-width:900px) {
+    /* Event grid */
+    .eventGrid li.event {
+        width: 24.9%;
+    }
+}

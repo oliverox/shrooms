@@ -1,9 +1,12 @@
-/* Guidelines for ordering CSS rules:
-   * Box model all rules related to position, size)
-   * Font (rules related to font size, style, line-spacing, etc)
-   * Border (rules related to border-width, style, etc)
-   * Background (background position for sprites, background-size, etc)
-   * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+/*
+ *** app.css - Generic app styles for modules reused throughout
+ *
+ * Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
 */
 
 body {
@@ -172,99 +175,4 @@ header .logo {
 }
 dd.locale:after {
      content:"";
-
- }
-
-
-
-
-/* Overrides for larger viewports */
-@media all and (min-width:500px) {
-     /* Header */
-    header {
-        width: auto;
-        margin-left: 75px;
-    }
-    header .logo {
-        display: block;
-        top: 45px;
-        height: auto;
-    }
-    header .navBtn {
-        display: none;
-    }
-
-    /* Main Nav */
-    .mainNav {
-        display: block;
-        left: 0;
-        width: 75px;
-        font-size: 0.8em;
-    }
-    .navBar {
-        display: none;
-    }
-    .mainNav ul {
-        display: block;
-        padding: 5px 0;
-    }
-    .mainNav li {
-        padding: 42px 0 12px;
-        margin: 20px 6px;
-        text-align: center;
-        border: none;
-    }
-    .mainNav li.cat {
-        background-position: 50% 0;
-    }
-    .mainNav li.social {
-        background-position: 50% -80px;
-    }
-    .mainNav li.sell {
-        background-position: 50% -160px;
-    }
-    .mainNav li.support {
-        background-position: 50% -240px;
-    }
-
-
-    /* Body and main Content */
-    .body {
-        width:auto;
-        margin: 0 0 0 75px;
-    }
-    .container { /* Generic page containers */
-        width:86%;
-    }
-
-    /* Tabs */
-    .mainContent nav .arrow {
-        display: none;
-    }
-    .mainContent .tabs {
-        width:86%;
-    }
-    .mainContent .tabs li {
-        width:25%;
-    }
-
-
-    /* Footer */
-    footer .container {
-        padding:26px 0;
-        white-space: nowrap;
-    }
-    .footerNav {
-        display: inline-block;
-        width: 20%;
-        white-space: normal;
-        vertical-align: top;
-    }
-    .footerNav dd {
-        display: block;
-        padding: 10px 10px 0 0;
-    }
-    .footerNav dd:after {
-        content:"";
-    }
 }

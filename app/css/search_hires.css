@@ -1,0 +1,14 @@
+.headerSearch {
+    display: block;
+    padding-bottom: 30px;
+    margin:54px auto 0;
+}
+#search {
+    width: 86%;
+    margin-bottom: 16px;
+    font-size: 1.16em;
+    background-position:4px -312px;
+}
+#search input {
+    padding: 24px 12px;
+}

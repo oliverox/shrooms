@@ -1,4 +1,7 @@
-/* Guidelines for ordering CSS rules:
+/*
+ *** search.css - Search bar in header and other places
+ *
+ * Guidelines for ordering CSS rules:
  * Box model all rules related to position, size)
  * Font (rules related to font size, style, line-spacing, etc)
  * Border (rules related to border-width, style, etc)
@@ -22,22 +25,4 @@
     padding:12px;
     border:none;
     background: transparent;
-}
-
-@media all and (min-width:500px) {
-    .headerSearch {
-        display: block;
-        padding-bottom: 30px;
-        margin:54px auto 0;
-    }
-    #search {
-        width: 86%;
-        margin-bottom: 16px;
-        font-size: 1.16em;
-        background-position:4px -312px;
-    }
-    #search input {
-        padding: 24px 12px;
-    }
-
 }
