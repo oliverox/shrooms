@@ -1,0 +1,78 @@
+/*
+ *** app.css - Generic app styles for modules reused throughout
+ *
+ * Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    font-size:87%; /* 14px */
+}
+
+/* Generic classes */
+.container {
+    display: block;
+}
+.floatL {
+    float: left;
+}
+.floatR {
+    float: right;
+}
+
+/* Left Nav */
+.mainNav {
+    position:fixed;
+    display: block;
+    left: -90px;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    transition: left 0.15s ease-in;
+    -moz-transition: left 0.15s ease-in;
+    -webkit-transition: left 0.15s ease-in;
+    -o-transition: left 0.15s ease-in;
+}
+.mainNav ul {
+    display: block;
+    padding-bottom: 10px;
+}
+.mainNav li {
+    padding: 18px 57px 20px 15px;
+    overflow: hidden;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    cursor: pointer;
+}
+.mainNav li.menu {
+    background-position: 100% 0;
+}
+.mainNav li.search {
+    background-position: 100% -80px;
+}
+.mainNav li.star {
+    background-position: 100% -160px;
+}
+.mainNav li.sports {
+    background-position: 100% -240px;
+}
+.mainNav li.concerts {
+    background-position: 100% -320px;
+}
+.mainNav li.theatre {
+    background-position: 100% -400px;
+}
+.mainNav li.profile {
+    background-position: 100% -480px;
+}
+
+/* Content Area */
+.body {
+    width:auto;
+    margin: 0 0 0 56px;
+}

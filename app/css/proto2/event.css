@@ -1,0 +1,177 @@
+/*
+ *** app.css - Generic app styles for modules reused throughout
+ *
+ * Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+
+#filterContainer {
+    width:24em;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    border-width:0 0 0 3px;
+    border-left-style: solid;
+    box-shadow:0 -2px 3px #000;
+    -moz-box-shadow:0 -2px 3px #000;
+    -webkit-box-shadow:0 -2px 3px #000;
+}
+.mainContainer {
+    position: absolute;
+    left: 57px;
+    right: 26em;
+    top: 0;
+    bottom: 0;
+}
+#mapContainer {
+    height: 100%;
+    overflow-y: hidden;
+}
+#mapContainer img.map {
+    height:auto;
+    width: 100%;
+    margin-top:114px;
+}
+
+
+/* Event details overlay */
+.details {
+    position: absolute;
+    top: 56px;
+    max-width: 95%;
+    overflow: hidden;
+    padding: 7px 0 0;
+    text-shadow:0 1px 0 rgba(255,255,255,0.95);
+}
+.eventDetails dt {
+    font-weight:bold;
+}
+.eventDetails dt,
+.eventDetails dd.metadata {
+    min-width: 17em;
+    margin-left:57px;
+    padding: 0 11px;
+}
+.eventDetails dd.metadata {
+    font-size: 0.75em;
+}
+.eventDetails dd.darkBorder,
+.eventDetails .date {
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-width:0 0 3px;
+}
+.eventDetails .date {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width:56px;
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right:solid 1px #FFF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.eventDetails span {
+    display: block;
+}
+.eventDetails .date .dow,
+.eventDetails .date .month {
+    font-size:0.62em;
+}
+.eventDetails .date .dow {
+    text-decoration: underline;
+}
+.eventDetails .day {
+    font-size: 2em;
+    font-weight: bold;
+    line-height:0.95em;
+}
+
+/* Filters Area */
+#filterContainer h1 {
+    position: absolute;
+    left: -4.5em;
+    top: 30%;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    z-index: 4;
+    text-shadow: -1px 0 0 rgba(0,0,0,0.25);
+    box-shadow:0 -2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 -2px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 -2px 2px rgba(0,0,0,0.3);
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.sectionsContainer {
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.seatSection h2 {
+    position: relative;
+}
+.seatSection .title,
+.seatSection .filters li {
+    padding: 12px 10em 12px 20px;
+}
+.seatSection .title {
+    position:relative;
+    display: block;
+}
+.seatSection h2 .btnSm {
+    position:absolute;
+    right: 50px;
+}
+.seatSection .closeSection {
+    position:absolute;
+    right:0;
+    width:42px;
+    top: 0;
+    height:100%;
+    text-indent:-9999px;
+    border-left-style:solid;
+    border-width: 0 0 0 1px;
+    background-position: 50% -564px;
+}
+#seatView {
+    display: block;
+    width: 100%;
+    height:180px;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.seatSection .filters li{
+    position:relative;
+    padding-right:0;
+    border-bottom-style:solid;
+    border-width: 0 0 1px;
+}
+.seatSection .filters span {
+    display: block;
+    font-size:0.8em;
+}
+.seatSection .filters em {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    font-size: 1.1em;
+    padding: 20px 14px;
+}

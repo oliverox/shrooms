@@ -34,10 +34,6 @@ header .navBtn {
 .navBar {
     display: none;
 }
-.mainNav ul {
-    display: block;
-    padding: 5px 0;
-}
 .mainNav li {
     padding: 42px 0 12px;
     margin: 20px 6px;

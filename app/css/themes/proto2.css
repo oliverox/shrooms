@@ -1,0 +1,75 @@
+/* Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/
+
+/* Text colors */
+.appText { /* Generic body text */
+    color: #333;
+}
+.lightestText {
+    color: #FFF;
+}
+
+
+/* Border colors */
+.contrastBorder {
+    border-color: #ea6a00;
+}
+.lightBorder {  /* Light blue - tabs */
+    border-color:#879cb0;
+}
+.mediumBorder {
+    border-color: #CCC;
+}
+.darkBorder {
+    border-color:#164066;
+}
+.darkestBorder {
+    border-color:#333;
+}
+
+/* Background colors */
+.appBg { /* App background */
+    background-color: #FFF;
+}
+.navBg { /* Left nav background */
+    background-color: #174067;
+}
+.contrastBg { /* Orange */
+    background-color: #ea6a00;
+}
+.lightestBg {
+    background-color: #FFF;
+}
+.lightBg {
+    background-color: #f6f6f6;
+    background-color: rgba(204,204,204,0.17);
+}
+.mediumBg {
+    background-color: #ebe7de;
+}
+.darkBg {  /* Tabs */
+    background-color: #174067;
+}
+.darkestBg {
+    background-color:#333;
+}
+
+/* Sprites */
+.spriteBg {
+    background-image: url('/img/proto2/sprite.png');
+    background-repeat:no-repeat;
+}
+
+/* Override button colors and sizes */
+.ctaBtn {
+    background-color:#174067;
+}
+.btnSm {
+    padding:0 8px;
+    font-size: 0.8em;
+}

@@ -1,0 +1,10 @@
+/*
+ *** main.css - Generic app styles for modules reused throughout
+ *
+ * Guidelines for ordering CSS rules:
+ * Box model all rules related to position, size)
+ * Font (rules related to font size, style, line-spacing, etc)
+ * Border (rules related to border-width, style, etc)
+ * Background (background position for sprites, background-size, etc)
+ * CSS3/Other (drop shadow, transitions, rounded corners, etc)
+*/

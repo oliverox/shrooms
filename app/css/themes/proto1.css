@@ -75,6 +75,6 @@
 
 /* Sprites */
 .spriteBg {
-    background-image: url('../img/sprite.png');
+    background-image: url('../../img/proto1/sprite.png');
     background-repeat:no-repeat;
 }
