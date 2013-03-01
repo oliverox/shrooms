@@ -1,0 +1,50 @@
+#mapcontainer {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transform-origin: 0px 0px;
+	position:absolute;
+}
+#mapcontainer .copyright {
+	text-indent: -9999px; 
+}
+
+#svgcontainer {
+	position:absolute;
+	opacity:1;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-position:center; 
+}
+
+#svgcontainer svg {
+	opacity: .99;	/* makes black line on right side of background image to disappear */
+}
+
+.hwacc {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-moz-backface-visibility: hidden;
+	-moz-perspective: 1000;	
+	-o-backface-visibility: hidden;
+	-o-perspective: 1000;	
+	backface-visibility: hidden;
+	perspective: 1000;
+}
+
+.hide {
+	display: none;
+}
+
+.smooth {
+	-webkit-transition-property: -webkit-transform;
+  	-webkit-transition-duration: .6s, .6s;
+	-moz-transition-property: -moz-transform;
+  	-moz-transition-duration: .6s, .6s;
+	-o-transition-property: -o-transform;
+  	-o-transition-duration: .6s, .6s;
+	transition-property: transform;
+  	transition-duration: .6s, .6s;
+}
